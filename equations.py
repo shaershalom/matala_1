@@ -24,15 +24,10 @@ def XtimesY(x,y):
         sum_num=exponent(y*ln(x))
         return  sum_num
     else:
-        x=(x*(-1))
-        if (x%2==0):
-            sum_num=exponent(y*ln(x))
-            return (sum_num)
-        else:
-             sum_num=exponent(y*ln(x))
-             return (sum_num*(-1))
-
-def sqrt(x,y):
+        sum_num=0
+        return  sum_num
+        
+def sqrt(y,x):
     sum_sqrt= XtimesY(x,(1/y))
     return sum_sqrt
             
