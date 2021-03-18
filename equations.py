@@ -11,7 +11,7 @@ def exponent (x):
         i=i+1
     return answer
 
-def ln(x):
+def Ln(x):
     y=0
     i=0
     while (i<500):
@@ -21,10 +21,10 @@ def ln(x):
 
 def XtimesY(x,y):
     if x>0 :
-        sum_num=exponent(y*ln(x))
+        sum_num=exponent(y*Ln(x))
         return  sum_num
     else:
-        sum_num=0
+        sum_num=float(0.0)
         return  sum_num
         
 def sqrt(y,x):
@@ -39,6 +39,6 @@ def calculate(x):
 
 try:
     x=float(input("enter number : "))
-    print(calculate(x))
+    print(float(calculate(x)))
 except:
-    print(int(0))     
+    print(float(0.0))
