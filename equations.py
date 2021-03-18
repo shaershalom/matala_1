@@ -28,7 +28,8 @@ def XtimesY(x,y):
         sum_num=exponent(y*Ln(x))
         return  sum_num
     else:
-        return float(0.0)
+        sum_num = float(0.0) 
+        return sum_num
 
 def sqrt(y,x):
     x=float(x)
@@ -47,4 +48,4 @@ try:
     x=float(input("enter number : "))
     print(float(calculate(x)))
 except:
-    print(0.0)
+    print(float(0.0))
