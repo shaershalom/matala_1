@@ -32,8 +32,9 @@ def sqrt(y:float,x:float)-> float:
     return sum_sqrt
             
 def calculate(x:float)-> float:
-    sum_num=0
-    sum_num=(XtimesY(2.718281828459045,x)*XtimesY(7,x)*XtimesY(x,-1)*sqrt(x,x))
-    return float('%0.6f' % sum_num )
-
-
+    if x != 0 : 
+        sum_num=0
+        sum_num=(XtimesY(2.718281828459045,x)*XtimesY(7,x)*XtimesY(x,-1)*sqrt(x,x))
+        return float('%0.6f' % sum_num )
+    else:
+        return float(0.0)
